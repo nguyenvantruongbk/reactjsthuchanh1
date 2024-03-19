@@ -1,24 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import { Route, Router } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <></> The rong de cac phan tu ben trong ngang hang nhau
+    <>
+      {/* { Header o day} */}
+      {/* { Menu o day} */}
+      <Router>
+        <Route path='/' Component={Home} />
+        <Route paht='/' Component={Aboutus}/>
+
+      </Router>
+      {/* {{Footer o day}} */}
+
+    </>
   );
 }
 
